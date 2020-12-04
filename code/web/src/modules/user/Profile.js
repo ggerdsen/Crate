@@ -48,6 +48,12 @@ const Profile = (props) => (
         // </Link>
         
         // Upcoming delivery dates
+        
+        // Shopping history
+        
+        // Edit shipping address
+        
+        // Set a personal description
       
       </GridCell>
     </Grid>

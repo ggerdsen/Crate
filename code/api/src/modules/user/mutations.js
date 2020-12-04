@@ -24,6 +24,10 @@ export const userSignup = {
       type: GraphQLString
     }
     
+    // Address information here
+    
+    // Personal description here
+    
     // Initial photo
     // photo: {
     //   name: 'photo',
@@ -51,6 +55,10 @@ export const userSignup = {
 //       name: 'password',
 //       type: GraphQLString
 //     }
+//
+//    Address information here
+//
+//    Personal description here
 //
 //     photo: {
 //       name: 'photo',
