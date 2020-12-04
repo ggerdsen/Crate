@@ -23,9 +23,42 @@ export const userSignup = {
       name: 'password',
       type: GraphQLString
     }
+    
+    // Initial photo
+    // photo: {
+    //   name: 'photo',
+    //   type: ???
+    // }
   },
   resolve: create
 }
+
+// Edit user data including photo
+// export const userSignup = {
+//   type: UserType,
+//   args: {
+//     name: {
+//       name: 'name',
+//       type: GraphQLString
+//     },
+//
+//     email: {
+//       name: 'email',
+//       type: GraphQLString
+//     },
+//
+//     password: {
+//       name: 'password',
+//       type: GraphQLString
+//     }
+//
+//     photo: {
+//       name: 'photo',
+//       type: ???
+//     }
+//   },
+//   resolve: create
+// }
 
 // Remove
 export const userRemove = {
