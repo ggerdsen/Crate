@@ -7,6 +7,7 @@ import { create, remove } from './resolvers'
 
 // Subscription edit
 
+// Subscription show
 
 // Subscription create
 export const subscriptionCreate = {
