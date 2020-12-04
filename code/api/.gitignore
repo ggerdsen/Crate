@@ -2,3 +2,5 @@ node_modules/
 build/
 public/images/uploads/*
 !public/images/uploads/.gitkeep
+public/js/bundles/
+public/index.html
