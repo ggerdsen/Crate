@@ -40,7 +40,13 @@ const Profile = (props) => (
           <Button theme="primary">Subscriptions</Button>
         </Link>
 
-        <Button theme="secondary" onClick={props.logout} style={{ marginLeft: '1em' }}>Logout</Button>
+        <Button theme="secondary" onClick={props.logout} style={{ marginLeft: '1em', marginRight: '1em' }}>Logout</Button>
+        
+        // Link to add profile picture
+        // <Link to={userRoutes.?????.path}>
+        //   <Button theme="primary">Upload Profile Picture</Button>
+        // </Link>
+      
       </GridCell>
     </Grid>
   </div>
