@@ -5,6 +5,9 @@ import { GraphQLInt } from 'graphql'
 import SubscriptionType from './types'
 import { create, remove } from './resolvers'
 
+// Subscription edit
+
+
 // Subscription create
 export const subscriptionCreate = {
   type: SubscriptionType,

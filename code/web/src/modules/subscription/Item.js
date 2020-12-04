@@ -88,6 +88,8 @@ class Item extends PureComponent {
             </Button>
           </p>
 
+          // Change delivery date
+
           <p style={{ color: grey2, marginTop: '1em', fontSize: '0.8em', textAlign: 'center' }}>
             Subscribed on { new Date(parseInt(createdAt)).toDateString() }
           </p>
