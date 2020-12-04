@@ -1,20 +1,26 @@
 ## Location of annotations for each card    
-"Add profile picture"   
+
+### "Add profile picture"   
   `/web/src/modules/user/Profile.js`    
-  `/api/src/modules/user/mutations.js`    
-"Change delivery date"    
+  `/api/src/modules/user/mutations.js`
+  
+### "Change delivery date"    
   `/web/../subscription/Item`   
   `/api/src/modules/subscription/mutations.js`    
-"Upcoming deliveries"   
+  
+### "Upcoming deliveries"   
   `/web/src/modules/user/Profile.js`    
   <!-- `/api/src/modules/subscription/mutations.js` -->   
-"Shopping history"    
+  
+### "Shopping history"    
   `/web/src/modules/user/Profile.js`    
   <!-- `/api/src/modules/subscription/mutations.js` -->   
-"Edit shipping address"   
+  
+### "Edit shipping address"   
   `/web/src/modules/user/Profile.js`    
-  `/api/src/modules/user/mutations.js`    
-"Set a personal description"    
+  `/api/src/modules/user/mutations.js`  
+  
+### "Set a personal description"    
   `/web/src/modules/user/Profile.js`    
   `/api/src/modules/user/mutations.js`    
 
