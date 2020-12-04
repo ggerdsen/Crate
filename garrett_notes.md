@@ -10,11 +10,11 @@
   
 ### "Upcoming deliveries"   
   `/web/src/modules/user/Profile.js`    
-  <!-- `/api/src/modules/subscription/mutations.js` -->   
+  `??? /api/src/modules/subscription/mutations.js ???`  
   
 ### "Shopping history"    
   `/web/src/modules/user/Profile.js`    
-  <!-- `/api/src/modules/subscription/mutations.js` -->   
+  `??? /api/src/modules/subscription/mutations.js ???`  
   
 ### "Edit shipping address"   
   `/web/src/modules/user/Profile.js`    
