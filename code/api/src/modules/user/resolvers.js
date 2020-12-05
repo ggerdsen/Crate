@@ -1,3 +1,5 @@
+// This file houses the logic for fetching/manipulating data from the db
+  // will need to add an update resolver
 // Imports
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
@@ -20,6 +22,9 @@ export async function create(parentValue, { name, email, password }) {
       name,
       email,
       password: passwordHashed
+      // will need to add profile image
+      // will need to add description
+      // will need to add shipping address
     })
   } else {
     // User exists

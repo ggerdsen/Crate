@@ -23,9 +23,14 @@ export const userSignup = {
       name: 'password',
       type: GraphQLString
     }
+    // will need to add profile image
+    // will need to add description
+    // will need to add shipping address
   },
   resolve: create
 }
+
+// Will need to add an update resolver 
 
 // Remove
 export const userRemove = {
