@@ -1,3 +1,5 @@
+// This file houses the Product model. Defines the attributes and data types
+  // for each attribute
 'use strict'
 
 // Product
@@ -23,3 +25,5 @@ module.exports = function(sequelize, DataTypes) {
     }
   })
 }
+
+// Might have to define relationships in here

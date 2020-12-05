@@ -1,3 +1,4 @@
+// This file houses the endpoints that have read functionality
 // Imports
 import { GraphQLString, GraphQLInt, GraphQLList } from 'graphql'
 
@@ -43,3 +44,9 @@ export const productTypes = {
   type: new GraphQLList(ProductTypesType),
   resolve: getTypes
 }
+
+// Will need to add an endpoint to return all products that have been delivered
+  // to a specific user
+
+// Will need to add an endpoint to return all products that have been kept by a
+  // specific user 

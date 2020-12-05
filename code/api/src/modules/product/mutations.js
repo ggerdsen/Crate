@@ -1,3 +1,4 @@
+// This file houses endpoints with write functionality for Product
 // Imports
 import { GraphQLString, GraphQLInt } from 'graphql'
 
@@ -95,3 +96,6 @@ export const productRemove = {
   },
   resolve: remove
 }
+
+// For both create and update, will need to add a status column with data type of integer
+  // and a kept column with data type of boolean and default value of false

@@ -1,3 +1,6 @@
+// This file houses the logic for each endpoint specific to Products
+// Will need to add logic/resolver for all products that have been delivered to
+  // a user and for all products that have been kept by a user 
 // App Imports
 import params from '../../config/params'
 import models from '../../setup/models'
