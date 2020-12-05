@@ -19,7 +19,7 @@ export default (state = userInitialState, action) => {
         isAuthenticated: !isEmpty(action.user),
         details: action.user,
       }
-
+// add update user reducer.
     case LOGIN_REQUEST:
       return {
         ...state,

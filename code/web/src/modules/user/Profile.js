@@ -29,17 +29,20 @@ const Profile = (props) => (
         <H3 font="secondary">My profile</H3>
       </GridCell>
     </Grid>
-
+{/* displaying user name */}
     <Grid>
       <GridCell style={{ padding: '2em', textAlign: 'center' }}>
         <H4 style={{ marginBottom: '0.5em' }}>{props.user.details.name}</H4>
-
+        {/* add component here to update description */}
+        {/* displaying user email */}
         <p style={{ color: grey2, marginBottom: '2em' }}>{props.user.details.email}</p>
-
+      {/* we will add a component here to upgrade email */}
+    {/* add component to update shipping adress */}
+    {/* displaying user subscriptions */}
         <Link to={userRoutes.subscriptions.path}>
           <Button theme="primary">Subscriptions</Button>
         </Link>
-
+{/* displaying logout button */}
         <Button theme="secondary" onClick={props.logout} style={{ marginLeft: '1em' }}>Logout</Button>
       </GridCell>
     </Grid>
