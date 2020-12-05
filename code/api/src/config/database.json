@@ -1,3 +1,5 @@
+This file tells the CLI how to connect to the database. A test object will
+need to be added
 {
   "development": {
     "username": "postgres",

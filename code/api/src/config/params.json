@@ -1,3 +1,4 @@
+product status will be defined in here (status 1 = pending, status 2 = shipped, etc)
 {
   "product": {
     "types": {
