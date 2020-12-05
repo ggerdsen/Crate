@@ -1,3 +1,4 @@
+// Will need to update these users to include the new attributes
 'use strict';
 
 const bcrypt = require('bcrypt');

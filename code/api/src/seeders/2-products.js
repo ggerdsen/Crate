@@ -1,3 +1,4 @@
+// Will need to be updated with possible new attributes
 'use strict';
 
 const params = require('../config/params');
