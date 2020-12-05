@@ -1,3 +1,5 @@
+// This file holds the migration for creating a
+// Products table with appropriate columns/data/attributes
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('products', {
@@ -33,6 +35,10 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE
       }
+      // will need to add a status column with data type of integer
+      // will need to add a kept column with data type of boolean and 
+        // default value of false
+      // foreign key for crate might need to be added?
     });
   },
   down: (queryInterface, Sequelize) => {

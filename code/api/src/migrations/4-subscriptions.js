@@ -1,3 +1,4 @@
+// This file holds the migration for creating a Subscriptions table
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('subscriptions', {
@@ -7,6 +8,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      // This is a foreign key for a user
       userId: {
         type: Sequelize.INTEGER,
         references: {
@@ -15,6 +17,7 @@ module.exports = {
         },
         allowNull: false
       },
+      // This is a foreign key for a crate
       crateId: {
         type: Sequelize.INTEGER,
         references: {

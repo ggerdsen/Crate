@@ -1,3 +1,4 @@
+// This file holds the migration for creating a Crates table
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('crates', {
