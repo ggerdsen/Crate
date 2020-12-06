@@ -1,3 +1,5 @@
+// Changes to user information on the backend take place here
+
 // Imports
 import { GraphQLString, GraphQLInt } from 'graphql'
 

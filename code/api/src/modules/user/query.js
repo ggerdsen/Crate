@@ -1,3 +1,5 @@
+// Retrieval of user information from the server
+
 // Imports
 import { GraphQLInt, GraphQLString, GraphQLList } from 'graphql'
 
