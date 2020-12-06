@@ -5,6 +5,10 @@ import Profile from '../../modules/user/Profile'
 import Subscriptions from '../../modules/user/Subscriptions'
 
 // User routes
+// This is a database for all the routes used for user associated components
+// We are doing server-side routing throughout this app. Any additions to
+// routes and what needs to be rendered will need to be added to this file.
+
 export default {
   login: {
     path: '/user/login',

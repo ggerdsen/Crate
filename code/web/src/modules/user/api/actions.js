@@ -1,3 +1,8 @@
+// We will need to add additional actions here for any state changes that take
+// place according to our new features in the user profile
+
+// This is where api calls will be made as well
+
 // Imports
 import axios from 'axios'
 import { query, mutation } from 'gql-query-builder'

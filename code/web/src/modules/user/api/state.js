@@ -10,7 +10,9 @@ export const userInitialState = {
   details: null
 }
 
-// State
+// State - Any state changes taking place due to action types
+
+// Any new action types added to the actions.js file will need a case here:
 export default (state = userInitialState, action) => {
   switch (action.type) {
     case SET_USER:
