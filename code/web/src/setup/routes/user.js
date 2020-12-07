@@ -5,6 +5,9 @@ import Profile from '../../modules/user/Profile'
 import Subscriptions from '../../modules/user/Subscriptions'
 
 // User routes
+
+// !! - Can add a route here to a new survey page after subscribing
+
 export default {
   login: {
     path: '/user/login',
