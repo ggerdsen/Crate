@@ -1,3 +1,5 @@
+// will need to add migration for new fields which will alter schema
+
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('users', {

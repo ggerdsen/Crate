@@ -4,8 +4,8 @@ import { GraphQLString, GraphQLInt } from 'graphql'
 // App Imports
 import { UserType } from './types'
 import { create, remove } from './resolvers'
-
-// Create
+// Add ability to edit email
+// Create description, image, etc...
 export const userSignup = {
   type: UserType,
   args: {

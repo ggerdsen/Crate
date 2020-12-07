@@ -1,5 +1,5 @@
 'use strict'
-
+// Need to add has_many products
 module.exports = function(sequelize, DataTypes) {
   let Crate = sequelize.define('crates', {
     name: {

@@ -4,7 +4,7 @@ import { GraphQLString, GraphQLInt } from 'graphql'
 // App Imports
 import CrateType from './types'
 import { create, remove, update } from './resolvers'
-
+// will need to add products through CrateProducts joins table?
 // Crate create
 export const crateCreate = {
   type: CrateType,

@@ -1,5 +1,6 @@
 'use strict'
-
+// Add image, description, and product history here.
+// must build migration file (?) 5-add_info.js
 // User
 module.exports = function(sequelize, DataTypes) {
   let User = sequelize.define('users', {

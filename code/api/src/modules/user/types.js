@@ -1,6 +1,6 @@
 // Imports
 import { GraphQLObjectType, GraphQLString, GraphQLInt } from 'graphql'
-
+// need to update with new fields
 // User type
 const UserType = new GraphQLObjectType({
   name: 'user',

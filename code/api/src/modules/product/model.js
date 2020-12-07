@@ -1,5 +1,5 @@
 'use strict'
-
+// need to create joins table for CrateProducts and add status of delivered? AND kept/returned?
 // Product
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('products', {

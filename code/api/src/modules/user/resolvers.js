@@ -6,7 +6,7 @@ import jwt from 'jsonwebtoken'
 import serverConfig from '../../config/server'
 import params from '../../config/params'
 import models from '../../setup/models'
-
+// Add new fields description, image, etc...
 // Create
 export async function create(parentValue, { name, email, password }) {
   // Users exists with same email check
@@ -57,7 +57,7 @@ export async function login(parentValue, { email, password }) {
     }
   }
 }
-
+// Users sent back using activerecord lookup
 // Get by ID
 export async function getById(parentValue, { id }) {
   return await models.User.findOne({ where: { id } })

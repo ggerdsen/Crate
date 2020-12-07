@@ -10,7 +10,8 @@ export const users = {
   type: new GraphQLList(UserType),
   resolve: getAll
 }
-
+// specific user details loaded by ID through API?
+// will need to add description, image, etc... 
 // By ID
 export const user = {
   type: UserType,
