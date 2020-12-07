@@ -1,3 +1,5 @@
+// Corey Annotations - Initial index page loading resources - 
+
 // Imports
 import { Server } from 'http'
 import Express from 'express'

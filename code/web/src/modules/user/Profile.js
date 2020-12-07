@@ -1,3 +1,5 @@
+// After user login, profile page found here
+
 // Imports
 import React from 'react'
 import PropTypes from 'prop-types'
@@ -14,6 +16,15 @@ import { grey, grey2 } from '../../ui/common/colors'
 // App Imports
 import userRoutes from '../../setup/routes/user'
 import { logout } from './api/actions'
+
+// Will need to add elements for:
+// image
+// personal description
+// edit my email address
+// edit shipping address
+// history of products that have been delivered to me and what I have kept
+// next delivery and ability to adjust the date for when I am available.
+// Properties pulled from... User model? From user Migration?
 
 // Component
 const Profile = (props) => (
