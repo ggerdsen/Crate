@@ -47,7 +47,7 @@ const Profile = (props) => (
         <Link to={userRoutes.subscriptions.path}>
           <Button theme="primary">Subscriptions</Button>
         </Link>
-        
+        {/* We'll be adding additional links to routes here in order to view deliveries and purchased items */}
         <Button theme="secondary" onClick={props.logout} style={{ marginLeft: '1em' }}>Logout</Button>
       </GridCell>
     </Grid>

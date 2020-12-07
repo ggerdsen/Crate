@@ -15,6 +15,7 @@ export const userInitialState = {
 // Any new action types added to the actions.js file will need a case here:
 export default (state = userInitialState, action) => {
   switch (action.type) {
+    //sets state to new user
     case SET_USER:
       return {
         ...state,
@@ -23,6 +24,7 @@ export default (state = userInitialState, action) => {
       }
 
     case LOGIN_REQUEST:
+    // sets state isLoading value
       return {
         ...state,
         error: null,
@@ -30,6 +32,7 @@ export default (state = userInitialState, action) => {
       }
 
     case LOGIN_RESPONSE:
+      // Sets state error message and isLoading values
       return {
         ...state,
         error: action.error,
@@ -37,6 +40,7 @@ export default (state = userInitialState, action) => {
       }
 
     case LOGOUT:
+    // Resets user values in state upon logout
       return {
         ...state,
         error: null,

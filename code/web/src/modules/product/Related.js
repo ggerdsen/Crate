@@ -14,6 +14,7 @@ import EmptyMessage from '../common/EmptyMessage'
 import ProductItem from '../product/Item'
 
 // Component
+// This is currently not showing up anywhere on the app that I can see. Unavailable due to the bug on item details
 class Related extends PureComponent {
 
   componentDidMount() {

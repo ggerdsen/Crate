@@ -18,6 +18,9 @@ import { get } from './api/actions'
 import Loading from '../common/Loading'
 import Related from './Related'
 
+// This path appears to be broken somehow. This should lead the user to a page that shows information on a product, but the
+// page comes up and then goes blank after clicking. Error says "cannot read .length of null". Will need investigation.
+
 // Component
 class Detail extends PureComponent {
 

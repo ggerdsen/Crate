@@ -21,23 +21,27 @@ export const LOGOUT = 'AUTH/LOGOUT'
 
 // Set a user after login or using localStorage token
 export function setUser(token, user) {
+  // if localStorage token exists, authorize the user
   if (token) {
     axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   } else {
+    // if localStorage token does not exist, delete the user
     delete axios.defaults.headers.common['Authorization'];
   }
-
+  // return the action type
   return { type: SET_USER, user }
 }
 
 // Login a user using credentials
+// isLoading defaults to true
 export function login(userCredentials, isLoading = true) {
+  // Dispatch to change state isLoading property
   return dispatch => {
     dispatch({
       type: LOGIN_REQUEST,
       isLoading
     })
-
+    // Post user login to api
     return axios.post(routeApi, query({
       operation: 'userLogin',
       variables: userCredentials,
@@ -45,9 +49,10 @@ export function login(userCredentials, isLoading = true) {
     }))
       .then(response => {
         let error = ''
-
+        // return an error message if the api is unsuccessful
         if (response.data.errors && response.data.errors.length > 0) {
           error = response.data.errors[0].message
+          // Dispatch user info to state if api is successful
         } else if (response.data.data.userLogin.token !== '') {
           const token = response.data.data.userLogin.token
           const user = response.data.data.userLogin.user
@@ -56,7 +61,7 @@ export function login(userCredentials, isLoading = true) {
 
           loginSetUserLocalStorageAndCookie(token, user)
         }
-
+        // Dispatch error message or empty string to state
         dispatch({
           type: LOGIN_RESPONSE,
           error
@@ -83,6 +88,7 @@ export function loginSetUserLocalStorageAndCookie(token, user) {
 
 // Register a user
 export function register(userDetails) {
+  // Dispatch user information from api request to state
   return dispatch => {
     return axios.post(routeApi, mutation({
       operation: 'userSignup',
@@ -94,6 +100,7 @@ export function register(userDetails) {
 
 // Log out user and remove token from localStorage
 export function logout() {
+  // Dispatch logout to state
   return dispatch => {
     logoutUnsetUserLocalStorageAndCookie()
 
@@ -115,6 +122,7 @@ export function logoutUnsetUserLocalStorageAndCookie() {
 
 // Get user gender
 export function getGenders() {
+  // Dispatch user gender selection from api to state
   return dispatch => {
     return axios.post(routeApi, query({
       operation: 'userGenders',
