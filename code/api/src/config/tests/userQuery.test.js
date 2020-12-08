@@ -31,6 +31,7 @@ describe('test the truth', () => {
     const response = await request(server)
     .post('/graphql')
     .send({query: '{user(id:1) { email name role } }'})
+    // will add description and image above
     .expect(200)
     console.log(response.body.data);
     expect(response.body).toMatchObject({
@@ -40,6 +41,8 @@ describe('test the truth', () => {
           email: 'admin@crate.com',
           name: 'The Admin',
           role: 'ADMIN'
+          // description
+          // image
         }
       }
     })
