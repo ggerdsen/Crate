@@ -16,13 +16,13 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TEXT
     },
     description: {
-      type: Sequelize.TEXT
+      type: DataTypes.TEXT
     },
     picture: {
-      type: Sequelize.TEXT
+      type: DataTypes.TEXT
     },
     shippingAddress: {
-      type: Sequelize.TEXT
+      type: DataTypes.TEXT
     }
   })
 

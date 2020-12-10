@@ -29,7 +29,6 @@ export const userSignup = {
       type: GraphQLString
     },
 
-
     picture: {
       name: 'picture',
       type: GraphQLString
