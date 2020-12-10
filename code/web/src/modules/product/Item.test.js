@@ -9,15 +9,21 @@ import Item from './Item'
 import { slug } from '../../setup/helpers';
 
 describe('DOM', () => {
-    it('should render...', () => {
+    it('should render the name of the product', () => {
         render(
             <BrowserRouter>
                 <Item product={
-                    name = 'Chris'
+                    {
+                        id: 1,
+                        name: 'Christopher',
+                        slug: 'The Christopher',
+                        description: 'A good belt',
+                        image: "/images/stock/belt-female.jpg",
+                        createdAt: '1606856151187'
+                    }
                 }/>
             </BrowserRouter>
         );
-    // expect(true).toBe(true);    
-    expect(screen.getByText('Hello')).toBeInTheDocument();
+    expect(screen.getByText('Christopher')).toBeInTheDocument();
     });
 })
