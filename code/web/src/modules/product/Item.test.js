@@ -44,5 +44,21 @@ describe('DOM', () => {
         );
     expect(screen.getByText('A good belt')).toBeInTheDocument();
     });
-    
+    it('should render the product img', () => {
+        render(
+            <BrowserRouter>
+                <Item product={
+                    {
+                        id: 1,
+                        name: 'Christopher',
+                        slug: 'The Christopher',
+                        description: 'A good belt',
+                        image: "/images/stock/belt-female.jpg",
+                        createdAt: '1606856151187'
+                    }
+                }/>
+            </BrowserRouter>
+        );
+    expect(screen.getByTestId('img')).toBeInTheDocument();
+    });
 })
