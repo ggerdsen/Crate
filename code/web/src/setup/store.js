@@ -12,7 +12,7 @@ import * as subscription from '../modules/subscription/api/state'
 import * as crate from '../modules/crate/api/state'
 
 // App Reducer
-const appReducer = combineReducers({
+export const appReducer = combineReducers({
   common,
   user,
   ...product,
@@ -43,4 +43,4 @@ export const store = createStore(
   composeWithDevTools(
     applyMiddleware(thunk),
   )
-) 
+)
