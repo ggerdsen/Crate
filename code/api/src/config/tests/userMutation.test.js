@@ -16,13 +16,13 @@ describe('test user mutations', () => {
     )
   });
 
-  it('can alter a name for a specific user', async () => {
+  it('can alter a name for a specific user', () => {
     const mutation =
      request(server)
     .post('/graphql')
-    .send({mutation: '{CreateUsers { createUsers name: Donald Duck, email: duck@quack.com, password: 123456 } }'})
+    .send({mutation: '{userSignup { createUsers name: Donald Duck, email: duck@quack.com, password: 123456 } }'})
     .expect(200)
-    console.log(response.body.data);
+    console.log(mutation)
     // expect(response.body).toMatchObject({
 
     //   data:{
@@ -35,6 +35,5 @@ describe('test user mutations', () => {
     //     }
     //   }
     // })
-    done();
   })
 });

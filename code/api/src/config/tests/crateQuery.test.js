@@ -25,19 +25,19 @@ describe('Crate Queries', () => {
     done();
   })
 
-  it('returns a crate by id', async(done) => {
-    const response = await request(server)
-      .post('/graphql')
-      .send({query: `{crateById(crateId:4) { name } }`})
-      .expect(200)
-      console.log(response.body.data);
-      expect(response.body.data).toMatchObject(
-        {
-          crateById: {
-            name: 'Accessories for Women'
-          }
-        }
-      )
-    done();
-  })
+  // it('returns a crate by id', async(done) => {
+  //   const response = await request(server)
+  //     .post('/graphql')
+  //     .send({query: `{crateById(crateId:4) { name } }`})
+  //     .expect(200)
+  //     console.log(response.body.data);
+  //     expect(response.body.data).toMatchObject(
+  //       {
+  //         crateById: {
+  //           name: 'Accessories for Women'
+  //         }
+  //       }
+  //     )
+  //   done();
+  // })
 });
