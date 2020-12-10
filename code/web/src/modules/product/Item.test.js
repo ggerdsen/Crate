@@ -4,9 +4,10 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 import { BrowserRouter } from "react-router-dom";
+import { slug } from '../../setup/helpers';
 //Component
 import Item from './Item'
-import { slug } from '../../setup/helpers';
+
 
 describe('DOM', () => {
     it('should render the name of the product', () => {
