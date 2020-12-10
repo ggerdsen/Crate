@@ -26,4 +26,23 @@ describe('DOM', () => {
         );
     expect(screen.getByText('Christopher')).toBeInTheDocument();
     });
+
+    it('should render the product description', () => {
+        render(
+            <BrowserRouter>
+                <Item product={
+                    {
+                        id: 1,
+                        name: 'Christopher',
+                        slug: 'The Christopher',
+                        description: 'A good belt',
+                        image: "/images/stock/belt-female.jpg",
+                        createdAt: '1606856151187'
+                    }
+                }/>
+            </BrowserRouter>
+        );
+    expect(screen.getByText('A good belt')).toBeInTheDocument();
+    });
+    
 })
