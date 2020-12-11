@@ -18,15 +18,15 @@ class Edit extends Component{
   </label>
   <label>
     Image:
-    <input type="text" name="name" />
+    <input type="text" name="name"value ={this.state.user.image} />
   </label>
   <label>
-    Description:
-    <input type="text" name="name" />
+    Shipping Address:
+    <input type="text" name="name"value ={this.state.user.shippingAdress} />
   </label>
   <label>
     Email Address:
-    <input type="text" name="name" />
+    <input type="text" name="name"value ={this.state.user.email} />
   </label>
       </form>
     )
