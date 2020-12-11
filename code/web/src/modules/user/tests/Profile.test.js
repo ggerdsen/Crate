@@ -8,7 +8,7 @@ import { setUser, loginSetUserLocalStorageAndCookie } from '../api/actions'
 import { BrowserRouter, Switch } from 'react-router-dom'
 import {store} from '../../../setup/store.js'
 import '@testing-library/jest-dom'
-import { render } from '../../../../test-utils.js'
+import { render } from '../../../../test-utils.js';
 
 describe('User Profile', () => {
   describe('Unit Tests', () => {
@@ -78,13 +78,13 @@ describe('User Profile', () => {
           }
         }}}
       )
-      const profileTitle = screen.getByText('My profile')
-      const subscriptionsButton = screen.getByText('Subscriptions')
-      const logoutButton = screen.getByText('Logout')
-      expect(profileTitle).toBeInTheDocument();
-      expect(subscriptionsButton).toBeInTheDocument();
-      expect(logoutButton).toBeInTheDocument();
-      userEvent.click(logoutButton)
+      expect(screen.getByText('My profile')).toBeInTheDocument();
+      expect(screen.getByText('Subscriptions')).toBeInTheDocument();
+      expect(screen.getByText('Logout')).toBeInTheDocument();
+      setTimeout(() => {
+        userEvent.click(screen.getByText('Logout'));
+      }, 1000);
+      expect(screen.getByText('Elton')).toBeInTheDocument();
     })
   })
 })
