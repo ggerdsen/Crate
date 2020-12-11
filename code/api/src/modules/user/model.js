@@ -15,14 +15,14 @@ module.exports = function(sequelize, DataTypes) {
     role: {
       type: DataTypes.TEXT
     },
-    description: {
-      type: DataTypes.TEXT
-    },
     picture: {
       type: DataTypes.TEXT
     },
+    description: {
+      type: DataTypes.STRING
+    },
     shippingAddress: {
-      type: DataTypes.TEXT
+      type: DataTypes.STRING
     }
   })
 
