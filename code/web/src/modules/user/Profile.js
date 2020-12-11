@@ -9,7 +9,8 @@ import { Link } from 'react-router-dom'
 import { Grid, GridCell } from '../../ui/grid'
 import { H3, H4 } from '../../ui/typography'
 import Button from '../../ui/button'
-import { grey, grey2 } from '../../ui/common/colors'
+import Icon from '../../ui/icon'
+import { grey, grey2, black } from '../../ui/common/colors'
 
 // App Imports
 import userRoutes from '../../setup/routes/user'
@@ -27,10 +28,14 @@ const Profile = (props) => (
 
     {/* Top title bar */}
     <Grid style={{ backgroundColor: grey }}>
-      <GridCell style={{ padding: '2em', textAlign: 'center' }}>
+      <GridCell style={{ padding: '2em', textAlign: 'center', flexWrap: 'wrap', display: 'flex', justifyContent: 'center' }}>
         <H3 font="secondary">My profile</H3>
         {/*!! - Can add "edit" button on far right so user can update email and shipping address*/}
+        <Link to={userRoutes.subscriptions.path}>
+          <Icon size={2} style={{ color: black, paddingLeft: '.5em' }}>mode_edit</Icon>
+        </Link>
       </GridCell>
+
     </Grid>
 
     {/* !! - User details */}
