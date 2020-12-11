@@ -29,5 +29,11 @@ export default {
     path: '/user/subscriptions',
     component: Subscriptions,
     auth: true
+  },
+
+  edit: {
+    path: '/user/edit',
+    component: Edit,
+    auth: true
   }
 }
