@@ -14,25 +14,28 @@ class Edit extends Component{
     // will do post request here 
     // this request should update local user as well
   }
+  onChange = (event) =>{
+    this.setState({[event.target.name]:event.target.value})
+  }
   render(){
     return(
       <div>
         <form>
           <label>
             Description:
-            <input type="text" name="name" value ={this.state.user.description}  />
+            <input type="text" name="description" value ={this.state.user.description}  />
           </label>
           <label>
             Image:
-            <input type="text" name="name"value ={this.state.user.image} />
+            <input type="text" name="image"value ={this.state.user.image} />
           </label>
           <label>
             Shipping Address:
-            <input type="text" name="name"value ={this.state.user.shippingAdress} />
+            <input type="text" name="shippingAdress"value ={this.state.user.shippingAdress} />
           </label>
           <label>
             Email Address:
-            <input type="text" name="name"value ={this.state.user.email} />
+            <input type="text" name="email"value ={this.state.user.email} />
           </label>
         </form>
         <button onClick = {this.handleSubmit}>Click me</button>
