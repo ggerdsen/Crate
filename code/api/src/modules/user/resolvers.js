@@ -19,6 +19,9 @@ export async function create(parentValue, { name, email, password }) {
     return await models.User.create({
       name,
       email,
+      description,
+      picture,
+      shippingAddress,
       password: passwordHashed
     })
   } else {
@@ -61,6 +64,9 @@ export async function login(parentValue, { email, password }) {
         id: userDetails.id,
         name: userDetails.name,
         email: userDetails.email,
+        description: userDetails.description,
+        picture: userDetails.picture,
+        shippingAddress: userDetails.shippingAddress,
         role: userDetails.role
       }
 

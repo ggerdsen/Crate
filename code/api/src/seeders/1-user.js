@@ -12,6 +12,9 @@ module.exports = {
         email: 'admin@crate.com',
         password: bcrypt.hashSync('123456', config.saltRounds),
         role: params.user.roles.admin,
+        description: 'A nice boss',
+        picture: 'https://sites.google.com/a/umich.edu/the-rhetoric-of-memes/_/rsrc/1385145405448/home/good-guy-greg/Gums-Good-Guy-Greg.jpg',
+        shippingAddress: '1234 Denver St., Denver, CO',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -20,6 +23,9 @@ module.exports = {
         email: 'user@crate.com',
         password: bcrypt.hashSync('123456', config.saltRounds),
         role: params.user.roles.user,
+        description: 'A nice worker',
+        picture: 'https://pharr-away.com//wp-content/uploads/2013/08/Worker-Bee.jpg',
+        shippingAddress: '1234 Denver St., Denver, CO',
         createdAt: new Date(),
         updatedAt: new Date()
       }
