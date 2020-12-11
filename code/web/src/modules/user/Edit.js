@@ -3,16 +3,31 @@ import { connect } from 'react-redux'
 import { Component } from 'react';
 
 class Edit extends Component{
-  constructor(){
+  constructor({props}){
     super()
     this.state = {
-
+      profileState
     }
   }
   render(){
     return(
       <form>
-      
+      <label>
+    Description:
+    <input type="text" name="name" value ={this.state.user.description}  />
+  </label>
+  <label>
+    Image:
+    <input type="text" name="name" />
+  </label>
+  <label>
+    Description:
+    <input type="text" name="name" />
+  </label>
+  <label>
+    Email Address:
+    <input type="text" name="name" />
+  </label>
       </form>
     )
   }
