@@ -68,9 +68,9 @@ export function login(userCredentials, isLoading = true) {
 export function editUser(userDetails){
   return dispatch => {
     return axios.post(routeApi, mutation({
-      operation: 'userEdit',
+      operation: 'userUpdate',
       variables: userDetails,
-      fields: ['user {name, email, role, picture,shippingAddress,description}', 'token']
+      fields: ['user {name, email, picture, shippingAddress, description}', 'token']
     }))
     .then(response => {
       let error = ''
