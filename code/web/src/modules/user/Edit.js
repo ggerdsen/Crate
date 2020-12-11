@@ -9,26 +9,34 @@ class Edit extends Component{
       profileState
     }
   }
+  handleSubmit = () =>{
+    console.log('runs')
+    // will do post request here 
+    // this request should update local user as well
+  }
   render(){
     return(
-      <form>
-      <label>
-    Description:
-    <input type="text" name="name" value ={this.state.user.description}  />
-  </label>
-  <label>
-    Image:
-    <input type="text" name="name"value ={this.state.user.image} />
-  </label>
-  <label>
-    Shipping Address:
-    <input type="text" name="name"value ={this.state.user.shippingAdress} />
-  </label>
-  <label>
-    Email Address:
-    <input type="text" name="name"value ={this.state.user.email} />
-  </label>
-      </form>
+      <div>
+        <form>
+          <label>
+            Description:
+            <input type="text" name="name" value ={this.state.user.description}  />
+          </label>
+          <label>
+            Image:
+            <input type="text" name="name"value ={this.state.user.image} />
+          </label>
+          <label>
+            Shipping Address:
+            <input type="text" name="name"value ={this.state.user.shippingAdress} />
+          </label>
+          <label>
+            Email Address:
+            <input type="text" name="name"value ={this.state.user.email} />
+          </label>
+        </form>
+        <button onClick = {this.handleSubmit}>Click me</button>
+      </div>
     )
   }
   
@@ -39,4 +47,4 @@ function profileState(state) {
   }
 }
 
-export default connect(profileState, { })(Edit)
+export default connect(profileState, null)(Edit)
