@@ -7,9 +7,6 @@ class Edit extends Component{
     super()
     this.state = {
       ...props.user.details,
-      description:'',
-      image:'',
-      shippingAdress:'',
     }
   }
   handleSubmit = () =>{
