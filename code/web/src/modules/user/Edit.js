@@ -4,6 +4,7 @@ import { Component } from 'react';
 
 class Edit extends Component{
   constructor({props}){
+    [profileState] = {props}
     super()
     this.state = {
       profileState
