@@ -46,7 +46,7 @@ const Profile = (props) => (
         <Link to={userRoutes.subscriptions.path}>
           <Button theme="primary">Subscriptions</Button>
         </Link>
-        <Link to={userRoutes.subscriptions.path}>
+        <Link to={userRoutes.edit.path}>
           <Button theme="primary">Edit Profile</Button>
         </Link>
 

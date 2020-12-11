@@ -3,11 +3,13 @@ import { connect } from 'react-redux'
 import { Component } from 'react';
 
 class Edit extends Component{
-  constructor({props}){
-    [profileState] = {props}
+  constructor(props){
     super()
     this.state = {
-      profileState
+      ...props.user.details,
+      description:'',
+      image:'',
+      shippingAdress:'',
     }
   }
   handleSubmit = () =>{
@@ -24,22 +26,22 @@ class Edit extends Component{
         <form>
           <label>
             Description:
-            <input type="text" name="description" value ={this.state.user.description} onChange = {this.onChange} />
+            <input type="text" name="description" value ={this.state.description} onChange = {this.onChange} />
           </label>
           <label>
             Image:
-            <input type="text" name="image"value ={this.state.user.image} onChange = {this.onChange}/>
+            <input type="text" name="image"value ={this.state.image} onChange = {this.onChange}/>
           </label>
           <label>
             Shipping Address:
-            <input type="text" name="shippingAdress"value ={this.state.user.shippingAdress} onChange = {this.onChange}/>
+            <input type="text" name="shippingAdress"value ={this.state.shippingAdress} onChange = {this.onChange}/>
           </label>
           <label>
             Email Address:
-            <input type="text" name="email"value ={this.state.user.email} onChange = {this.onChange}/>
+            <input type="text" name="email"value ={this.state.email} onChange = {this.onChange}/>
           </label>
         </form>
-        <button onClick = {this.handleSubmit}>Click me</button>
+        <button onClick = {this.handleSubmit}>Submit Edit</button>
       </div>
     )
   }
