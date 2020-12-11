@@ -65,7 +65,25 @@ export function login(userCredentials, isLoading = true) {
       })
   }
 }
-
+export function editUser(){
+  return dispatch => {
+    return axios.post(routeApi, mutation({
+      operation: 'userEdit',
+      variables: userDetails,
+      fields: ['user {name, email, role, picture,shippingAddress,description}', 'token']
+    }))
+    .then(response => {
+      let error = ''
+      if (response.data.errors && response.data.errors.length > 0) {
+        error = response.data.errors[0].message
+      } else if (response.data.data.userLogin.token !== '') {
+        const token = response.data.data.userLogin.token
+        const user = response.data.data.userLogin.user
+        dispatch(setUser(token, user))
+    }
+  })
+}
+}
 // Set user token and info in localStorage and cookie
 export function loginSetUserLocalStorageAndCookie(token, user) {
   // Update token

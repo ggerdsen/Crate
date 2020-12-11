@@ -4,6 +4,7 @@ import { Component } from 'react';
 
 class Edit extends Component{
   constructor(props){
+    console.log(props)
     super()
     this.state = {
       ...props.user.details,
@@ -11,6 +12,7 @@ class Edit extends Component{
   }
   handleSubmit = () =>{
     console.log('runs')
+    
     // will do post request here 
     // this request should update local user as well
   }
@@ -27,11 +29,11 @@ class Edit extends Component{
           </label>
           <label>
             Image:
-            <input type="text" name="image"value ={this.state.image} onChange = {this.onChange}/>
+            <input type="text" name="image"value ={this.state.picture} onChange = {this.onChange}/>
           </label>
           <label>
             Shipping Address:
-            <input type="text" name="shippingAdress"value ={this.state.shippingAdress} onChange = {this.onChange}/>
+            <input type="text" name="shippingAdress"value ={this.state.shippingAddress} onChange = {this.onChange}/>
           </label>
           <label>
             Email Address:
