@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Component } from 'react';
+import { editUser } from './api/actions'
 
 class Edit extends Component{
   constructor(props){
@@ -12,9 +13,9 @@ class Edit extends Component{
   }
   handleSubmit = () =>{
     console.log('runs')
+    console.log(this.state)
+    this.props.editUser(this.state)
     
-    // will do post request here 
-    // this request should update local user as well
   }
   onChange = (event) =>{
     this.setState({[event.target.name]:event.target.value})
@@ -29,11 +30,11 @@ class Edit extends Component{
           </label>
           <label>
             Image:
-            <input type="text" name="image"value ={this.state.picture} onChange = {this.onChange}/>
+            <input type="text" name="picture"value ={this.state.picture} onChange = {this.onChange}/>
           </label>
           <label>
             Shipping Address:
-            <input type="text" name="shippingAdress"value ={this.state.shippingAddress} onChange = {this.onChange}/>
+            <input type="text" name="shippingAddress"value ={this.state.shippingAddress} onChange = {this.onChange}/>
           </label>
           <label>
             Email Address:
@@ -52,4 +53,4 @@ function profileState(state) {
   }
 }
 
-export default connect(profileState, null)(Edit)
+export default connect(profileState, {editUser})(Edit)

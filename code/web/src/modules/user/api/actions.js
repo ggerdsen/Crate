@@ -65,7 +65,7 @@ export function login(userCredentials, isLoading = true) {
       })
   }
 }
-export function editUser(){
+export function editUser(userDetails){
   return dispatch => {
     return axios.post(routeApi, mutation({
       operation: 'userEdit',
@@ -79,6 +79,7 @@ export function editUser(){
       } else if (response.data.data.userLogin.token !== '') {
         const token = response.data.data.userLogin.token
         const user = response.data.data.userLogin.user
+        console.log(user)
         dispatch(setUser(token, user))
     }
   })
