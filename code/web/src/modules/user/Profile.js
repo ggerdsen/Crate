@@ -46,6 +46,9 @@ const Profile = (props) => (
         <Link to={userRoutes.subscriptions.path}>
           <Button theme="primary">Subscriptions</Button>
         </Link>
+        <Link to={userRoutes.subscriptions.path}>
+          <Button theme="primary">Edit Profile</Button>
+        </Link>
 
         {/* !! - Link to user logout */}
         <Button theme="secondary" onClick={props.logout} style={{ marginLeft: '1em' }}>Logout</Button>
