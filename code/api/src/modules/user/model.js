@@ -16,6 +16,12 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TEXT
     },
     picture: {
+      type: DataTypes.TEXT
+    },
+    description: {
+      type: DataTypes.STRING
+    },
+    shippingAddress: {
       type: DataTypes.STRING
     }
   })
