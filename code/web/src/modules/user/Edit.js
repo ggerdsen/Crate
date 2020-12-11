@@ -23,19 +23,19 @@ class Edit extends Component{
         <form>
           <label>
             Description:
-            <input type="text" name="description" value ={this.state.user.description}  />
+            <input type="text" name="description" value ={this.state.user.description} onChange = {this.onChange} />
           </label>
           <label>
             Image:
-            <input type="text" name="image"value ={this.state.user.image} />
+            <input type="text" name="image"value ={this.state.user.image} onChange = {this.onChange}/>
           </label>
           <label>
             Shipping Address:
-            <input type="text" name="shippingAdress"value ={this.state.user.shippingAdress} />
+            <input type="text" name="shippingAdress"value ={this.state.user.shippingAdress} onChange = {this.onChange}/>
           </label>
           <label>
             Email Address:
-            <input type="text" name="email"value ={this.state.user.email} />
+            <input type="text" name="email"value ={this.state.user.email} onChange = {this.onChange}/>
           </label>
         </form>
         <button onClick = {this.handleSubmit}>Click me</button>
