@@ -42,6 +42,7 @@ export function login(userCredentials, isLoading = true) {
     return axios.post(routeApi, query({
       operation: 'userLogin',
       variables: userCredentials,
+      //need all fields here so we can just get user from state and add to description
       fields: ['user {name, email, role}', 'token']
     }))
       .then(response => {
