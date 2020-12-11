@@ -42,9 +42,14 @@ const Profile = (props) => (
         <p style={{ color: grey2, marginBottom: '2em' }}>{props.user.details.email}</p>
         {/* !! - Can add personal description here */}
 
+        {/* !! - Link to user order history (will need to add path and bring it in later) */}
+        <Link to={userRoutes.subscriptions.path}>
+          <Button theme="primary" >My Crates</Button>
+        </Link>
+
         {/* !! - Link to user subscriptions */}
         <Link to={userRoutes.subscriptions.path}>
-          <Button theme="primary">Subscriptions</Button>
+          <Button theme="primary" style={{ marginLeft: '1em' }}>Subscriptions</Button>
         </Link>
         <Link to={userRoutes.edit.path}>
           <Button theme="primary">Edit Profile</Button>
