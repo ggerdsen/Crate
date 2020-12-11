@@ -42,13 +42,15 @@ const Profile = (props) => (
     <Grid>
       <GridCell style={{ padding: '2em', textAlign: 'center' }}>
         {/* !! - Can add icon to the left of these details */}
+        <img style={{ marginBottom: '0.5em', border: '2px solid black', height: '20vh' }}src={'https://cdns.iconmonstr.com/wp-content/assets/preview/2019/240/iconmonstr-customer-5.png'} alt={'user profile image'}/>
+        
         <H4 style={{ marginBottom: '0.5em' }}>{props.user.details.name}</H4>
 
         <p style={{ color: grey2, marginBottom: '2em' }}>{props.user.details.email}</p>
 
         {/* !! - Can add personal description here */}
         <p style={{ color: grey2, marginBottom: '2em'}}>Soon-To-Be Trendsetter</p>
-        
+
         {/* !! - Link to user order history (will need to add path and bring it in later) */}
         <Link to={userRoutes.subscriptions.path}>
           <Button theme="primary">My Crates</Button>
