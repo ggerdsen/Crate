@@ -1,14 +1,14 @@
-import { screen } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
 import React from 'react'
 import userEvent from '@testing-library/user-event';
-import Profile from '../Profile.js';
+import Profile from './Profile.js';
 import { Provider } from 'react-redux';
 import {createStore} from 'redux'
-import { setUser, loginSetUserLocalStorageAndCookie } from '../api/actions'
+import { setUser, loginSetUserLocalStorageAndCookie } from './api/actions'
 import { BrowserRouter, Switch } from 'react-router-dom'
-import {store} from '../../../setup/store.js'
+import {store} from '../../setup/store.js'
 import '@testing-library/jest-dom'
-import { render } from '../../../../test-utils.js';
+import { render } from '../../../test-utils.js';
 
 describe('User Profile', () => {
   describe('Unit Tests', () => {
@@ -78,6 +78,7 @@ describe('User Profile', () => {
           }
         }}}
       )
+      // await waitFor(() => {
       expect(screen.getByText('My profile')).toBeInTheDocument();
       expect(screen.getByText('Subscriptions')).toBeInTheDocument();
       expect(screen.getByText('Logout')).toBeInTheDocument();
