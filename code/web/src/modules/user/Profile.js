@@ -42,7 +42,10 @@ const Profile = (props) => (
     <Grid>
       <GridCell style={{ padding: '2em', textAlign: 'center' }}>
         {/* !! - Can add icon to the left of these details */}
-        <img style={{ color: primary, borderRadius: '100%', padding: '5px', marginBottom: '0.5em', border: '2px solid', height: '25vh' }}src={'https://cdns.iconmonstr.com/wp-content/assets/preview/2019/240/iconmonstr-customer-5.png'} alt={'user profile image'}/>
+        <img style={{ color: primary, borderRadius: '100%', padding: '5px', marginBottom: '0.5em', border: '2px solid', height: '25vh' }}
+        src={
+          props.user.details.picture ? props.user.details.picture : 'https://cdns.iconmonstr.com/wp-content/assets/preview/2019/240/iconmonstr-customer-5.png'}
+          alt={'user profile image'}/>
 
         <H4 style={{ marginBottom: '0.5em' }}>{props.user.details.name}</H4>
 
