@@ -31,7 +31,7 @@ const Profile = (props) => (
       <GridCell style={{ padding: '2em', textAlign: 'center', flexWrap: 'wrap', display: 'flex', justifyContent: 'center' }}>
         <H3 font="secondary">My profile</H3>
         {/*!! - Can add "edit" button on far right so user can update email and shipping address*/}
-        <Link to={userRoutes.subscriptions.path}>
+        <Link to={userRoutes.edit.path}>
           <Icon size={2} style={{ color: black, paddingLeft: '.5em' }}>mode_edit</Icon>
         </Link>
       </GridCell>
@@ -60,9 +60,6 @@ const Profile = (props) => (
         {/* !! - Link to user subscriptions */}
         <Link to={userRoutes.subscriptions.path}>
           <Button theme="primary" style={{ marginLeft: '1em' }}>Subscriptions</Button>
-        </Link>
-        <Link to={userRoutes.edit.path}>
-          <Button theme="primary">Edit Profile</Button>
         </Link>
 
         {/* !! - Link to user logout */}
