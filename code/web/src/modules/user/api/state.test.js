@@ -23,4 +23,19 @@ describe('state', () => {
             }
         )
     })
+
+    it('should complete a login request', () => {
+        const action = {
+            type: LOGIN_REQUEST,
+            isLoading: false
+        }
+        expect(state(undefined, action)).toEqual(
+            {
+                error: null,
+                isLoading: false,
+                isAuthenticated: false,
+                details: null
+            }        
+        )
+    })
 })
