@@ -18,7 +18,9 @@ const currentUser = {
 }
 
 describe('User Profile', () => {
+
   describe('Unit Tests', () => {
+
     it('Should render a Profile', () => {
       render (
         <BrowserRouter>
@@ -29,6 +31,7 @@ describe('User Profile', () => {
       expect(screen.getByText('Subscriptions')).toBeInTheDocument();
       expect(screen.getByText('Logout')).toBeInTheDocument();
     })
+
     it('Should display the user information', () => {
       render (
         <BrowserRouter>
@@ -38,8 +41,11 @@ describe('User Profile', () => {
       expect(screen.getByText('Elton')).toBeInTheDocument();
       expect(screen.getByText('elton@john.com')).toBeInTheDocument();
     })
+
   })
+
   describe('Integration Tests', () => {
+
     it('Should log out a user', () => {
       store.dispatch(setUser(1, currentUser))
       render (
@@ -55,7 +61,9 @@ describe('User Profile', () => {
       }, 1000);
       expect(screen.getByText('Elton')).toBeInTheDocument();
     })
+
   })
+  
 })
 
 

@@ -1,6 +1,6 @@
 // Imports
-import { compose, combineReducers } from 'redux';
-import { createStore, applyMiddleware } from 'redux';
+import { compose, combineReducers, createStore, applyMiddleware } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk'
 
 // App Imports
@@ -29,7 +29,7 @@ export const rootReducer = (state, action) => {
 }
 
 // Load initial state from server side
-let initialState
+let initialState;
 if (typeof window !== 'undefined') {
   initialState = window.__INITIAL_STATE__
   delete window.__INITIAL_STATE__
