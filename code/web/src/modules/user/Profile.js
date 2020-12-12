@@ -49,7 +49,8 @@ const Profile = (props) => (
         <p style={{ color: grey2, marginBottom: '2em' }}>{props.user.details.email}</p>
 
         {/* !! - Can add personal description here */}
-        <p style={{ color: grey2, marginBottom: '2em'}}>Soon-To-Be Trendsetter</p>
+        <p style={{ color: grey2, marginBottom: '2em'}}>
+          {props.user.details.description ? props.user.details.description : 'Soon-To-Be Trendsetter'}</p>
 
         {/* !! - Link to user order history (will need to add path and bring it in later) */}
         <Link to={userRoutes.subscriptions.path}>
