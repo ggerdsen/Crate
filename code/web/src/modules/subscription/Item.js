@@ -30,6 +30,7 @@ class Item extends PureComponent {
 
   onChange = (event) =>{
     this.setState({[event.target.name]:event.target.value})
+    // this.props.editDelivery(this.state.preferredDelivery)
   }
 
 
@@ -95,14 +96,18 @@ class Item extends PureComponent {
           </p>
 
           <p style={{ color: grey2, marginTop: '1em', fontSize: '0.8em', textAlign: 'center' }}>
-            Subscribed since { new Date(parseInt(createdAt)).toDateString() }
+            Subscribed Since { new Date(parseInt(createdAt)).toDateString() }
           </p>
           <p style={{ color: grey2, marginTop: '1em', fontSize: '0.8em', textAlign: 'center' }}>
-            Next delivery on
+            Next Delivery on { this.state.preferredDelivery ? new Date(this.state.preferredDelivery).toUTCString()
+            : new Date(parseInt(createdAt)).toDateString() }
+          </p>
+          <p style={{ color: grey2, marginTop: '1em', fontSize: '0.8em', textAlign: 'center' }}>
+            Change Next Delivery:
           </p>
 
           <form onSubmit={this.handleSubmit}>
-            <div style={{ width: '25em', margin: '0 auto' }}>
+            <div style={{ width: '15em', margin: '0 auto' }}>
 
               <Input
                 type="date"
@@ -112,7 +117,7 @@ class Item extends PureComponent {
                 name="preferredDelivery"
                 autoComplete="off"
                 min={this.state.createdAt}
-                value={this.state.createdAt}
+                defValue={this.state.createdAt}
                 onChange={this.onChange}
               />
 
