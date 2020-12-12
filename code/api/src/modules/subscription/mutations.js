@@ -1,5 +1,6 @@
 // Imports
 import { GraphQLInt } from 'graphql'
+import { GraphQLString } from 'graphql'
 
 // App Imports
 import SubscriptionType from './types'
