@@ -10,7 +10,7 @@ import { Grid, GridCell } from '../../ui/grid'
 import { H3, H4 } from '../../ui/typography'
 import Button from '../../ui/button'
 import Icon from '../../ui/icon'
-import { grey, grey2, black } from '../../ui/common/colors'
+import { grey, grey2, black, primary } from '../../ui/common/colors'
 
 // App Imports
 import userRoutes from '../../setup/routes/user'
@@ -42,8 +42,8 @@ const Profile = (props) => (
     <Grid>
       <GridCell style={{ padding: '2em', textAlign: 'center' }}>
         {/* !! - Can add icon to the left of these details */}
-        <img style={{ marginBottom: '0.5em', border: '2px solid black', height: '20vh' }}src={'https://cdns.iconmonstr.com/wp-content/assets/preview/2019/240/iconmonstr-customer-5.png'} alt={'user profile image'}/>
-        
+        <img style={{ color: primary, borderRadius: '100%', padding: '5px', marginBottom: '0.5em', border: '2px solid', height: '25vh' }}src={'https://cdns.iconmonstr.com/wp-content/assets/preview/2019/240/iconmonstr-customer-5.png'} alt={'user profile image'}/>
+
         <H4 style={{ marginBottom: '0.5em' }}>{props.user.details.name}</H4>
 
         <p style={{ color: grey2, marginBottom: '2em' }}>{props.user.details.email}</p>
