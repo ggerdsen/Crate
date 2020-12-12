@@ -52,6 +52,16 @@ export async function create(parentValue, { crateId }, { auth }) {
   }
 }
 
+// Update user
+export async function update(parentValue, { id, preferredDelivery }, { auth }) {
+  return await models.Subscription.update(
+    {
+      preferredDelivery
+    },
+    { where: { id } }
+  )
+}
+
 // Delete subscription
 export async function remove(parentValue, { id }, { auth }) {
   if(auth.user && auth.user.id > 0) {
