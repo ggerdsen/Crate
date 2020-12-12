@@ -85,7 +85,7 @@ export function editUser(userDetails){
     },
     fields: ['id']
     }))
-}
+  }
 }
 // Set user token and info in localStorage and cookie
 export function loginSetUserLocalStorageAndCookie(token, user) {

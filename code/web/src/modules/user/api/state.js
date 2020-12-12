@@ -42,13 +42,13 @@ export default (state = userInitialState, action) => {
         isAuthenticated: false,
         details: null
       }
-      case EDIT_USER:
-        
-      let obj = {
+    
+    case EDIT_USER: 
+      return {
         ...state,
         details: action.user,
       }
-      return obj
+
     default:
       return state
   }

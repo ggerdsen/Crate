@@ -1,6 +1,6 @@
 import state from './state';
 import { userInitialState } from './state';
-import { SET_USER, LOGIN_REQUEST, LOGIN_RESPONSE, LOGOUT } from './actions';
+import { SET_USER, LOGIN_REQUEST, LOGIN_RESPONSE, LOGOUT, EDIT_USER } from './actions';
 import '@testing-library/jest-dom';
 
 describe('state', () => {
@@ -58,5 +58,18 @@ describe('state', () => {
             type: LOGOUT,
         }
         expect(state(undefined, action)).toEqual(userInitialState)
+    })
+
+    it('should be able to change the user', () => {
+        const action = {
+            type: EDIT_USER,
+            user: "Batman"
+        }
+        expect(state(undefined, action)).toEqual({
+            error: null,
+            isLoading: false,
+            isAuthenticated: false,
+            details: 'Batman'
+          })
     })
 })
