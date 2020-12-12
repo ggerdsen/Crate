@@ -32,30 +32,15 @@ export async function create(parentValue, { name, email, password }) {
 
 // Update user
 export async function update(parentValue, { id, name, email, picture, description, shippingAddress }, { auth }) {
-  const user = await models.User.update(
+  return await models.User.update(
     {
-      // name,
-       email,
+      email,
       picture,
       description,
       shippingAddress
     },
     { where: { id } }
   )
-  const userDetailsToken = {
-    id: user.id,
-    name: user.name,
-    email: user.email,
-    description: user.description,
-    picture: user.picture,
-    shippingAddress: user.shippingAddress,
-    role: user.role
-  }
-  
-  return {
-    user: user,
-    token: jwt.sign(userDetailsToken, serverConfig.secret)
-  }
 }
 
 export async function login(parentValue, { email, password }) {
