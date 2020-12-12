@@ -35,7 +35,6 @@ const Profile = (props) => (
           <Icon size={2} style={{ color: black, paddingLeft: '.5em' }}>mode_edit</Icon>
         </Link>
       </GridCell>
-
     </Grid>
 
     {/* !! - User details */}
@@ -55,9 +54,14 @@ const Profile = (props) => (
         <p style={{ color: grey2, marginBottom: '2em'}}>
           {props.user.details.description ? props.user.details.description : 'Soon-To-Be Trendsetter'}</p>
 
-        {/* !! - Link to user order history (will need to add path and bring it in later) */}
-        <Link to={userRoutes.subscriptions.path}>
+        {/* !! - Link to user crate history*/}
+        <Link to={userRoutes.crates.path}>
           <Button theme="primary">My Crates</Button>
+        </Link>
+
+        {/* !! - Link to user crate history*/}
+        <Link to={userRoutes.closet.path}>
+          <Button theme="primary" style={{ marginLeft: '1em' }}>My Closet</Button>
         </Link>
 
         {/* !! - Link to user subscriptions */}
