@@ -56,7 +56,7 @@ class Edit extends Component{
             </H4>
 
             {/* Form */}
-            <form onSubmit={this.handleSubmit}>
+            <form>
               <div style={{ width: '25em', margin: '0 auto' }}>
 
               {/* Name */}
@@ -119,9 +119,11 @@ class Edit extends Component{
 
               {/* Form submit */}
               <div style={{ marginTop: '2em', textAlign: 'center' }}>
-                <Button type="submit" theme="secondary" disabled={this.state.isLoading}>
-                  <Icon size={1.2} style={{ color: white }}>check</Icon> Save
-                </Button>
+                <Link to={userRoutes.profile.path} onClick={this.handleSubmit}>
+                  <Button type="submit" theme="secondary" disabled={this.state.isLoading}>
+                    <Icon size={1.2} style={{ color: white }}>check</Icon> Save
+                  </Button>
+                </Link>
               </div>
             </div>
           </form>

@@ -136,7 +136,7 @@ class Closet extends PureComponent {
 }
 
 // Component Properties
-// Crates.propTypes = {
+// Closet.propTypes = {
 //   subscriptions: PropTypes.object.isRequired,
 //   getSubscriptionsList: PropTypes.func.isRequired,
 //   messageShow: PropTypes.func.isRequired,

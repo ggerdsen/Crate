@@ -15,6 +15,7 @@ import { white, grey2, black } from '../../ui/common/colors'
 import { APP_URL } from '../../setup/config/env'
 import { messageShow, messageHide } from '../common/api/actions'
 import { remove, getListByUser } from '../subscription/api/actions'
+import { Input } from '../../ui/input'
 
 // Component
 class Item extends PureComponent {
@@ -26,6 +27,12 @@ class Item extends PureComponent {
       isLoading: false
     }
   }
+
+  onChange = (event) =>{
+    this.setState({[event.target.name]:event.target.value})
+    // this.props.editDelivery(this.state.preferredDelivery)
+  }
+
 
   onClickUnsubscribe = (id) => {
     let check = confirm('Are you sure you want to unsubscribe to this crate?')
@@ -89,8 +96,33 @@ class Item extends PureComponent {
           </p>
 
           <p style={{ color: grey2, marginTop: '1em', fontSize: '0.8em', textAlign: 'center' }}>
-            Subscribed on { new Date(parseInt(createdAt)).toDateString() }
+            Subscribed Since { new Date(parseInt(createdAt)).toDateString() }
           </p>
+          <p style={{ color: grey2, marginTop: '1em', fontSize: '0.8em', textAlign: 'center' }}>
+            Next Delivery on { this.state.preferredDelivery ? new Date(this.state.preferredDelivery).toUTCString()
+            : new Date(parseInt(createdAt)).toDateString() }
+          </p>
+          <p style={{ color: grey2, marginTop: '1em', fontSize: '0.8em', textAlign: 'center' }}>
+            Change Next Delivery:
+          </p>
+
+          <form onSubmit={this.handleSubmit}>
+            <div style={{ width: '15em', margin: '0 auto' }}>
+
+              <Input
+                type="date"
+                fullWidth={true}
+                placeholder="Date"
+                required="required"
+                name="preferredDelivery"
+                autoComplete="off"
+                min={this.state.createdAt}
+                defValue={this.state.createdAt}
+                onChange={this.onChange}
+              />
+
+            </div>
+          </form>
         </div>
       </Card>
     )
