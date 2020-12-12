@@ -11,6 +11,9 @@ export const LOGIN_REQUEST = 'AUTH/LOGIN_REQUEST'
 export const LOGIN_RESPONSE = 'AUTH/LOGIN_RESPONSE'
 export const SET_USER = 'AUTH/SET_USER'
 export const LOGOUT = 'AUTH/LOGOUT'
+export const EDIT_USER = 'AUTH/EDIT_USER'
+
+
 
 // Actions
 
@@ -36,9 +39,10 @@ export function login(userCredentials, isLoading = true) {
     return axios.post(routeApi, query({
       operation: 'userLogin',
       variables: userCredentials,
-      fields: ['user {name, id,email,picture,shippingAddress,description}']
+      fields: ['user {name, id, email, picture, shippingAddress, description} token']
     }))
       .then(response => {
+        console.log('this is the response',response)
         let error = ''
 
         if (response.data.errors && response.data.errors.length > 0) {
@@ -67,6 +71,12 @@ export function login(userCredentials, isLoading = true) {
 }
 export function editUser(userDetails){
   return dispatch => {
+  window.localStorage.setItem('user', JSON.stringify(userDetails))
+    console.log('action',userDetails)
+    dispatch({
+      type: EDIT_USER,
+      user: userDetails
+    })
     return axios.post(routeApi, mutation({
       operation: 'userUpdate',
       variables:{
@@ -76,23 +86,8 @@ export function editUser(userDetails){
       shippingAddress:userDetails.shippingAddress, 
       description:userDetails.description
     },
-      fields: ['id']
+    fields: ['id']
     }))
-    .then(response => {
-       console.log('hello',response)
-      let error = ''
-      if (response.data.errors && response.data.errors.length > 0) {
-        error = response.data.errors[0].message
-      } else if (response.data.data.userUpdate.token !== '' || !response.data.data.userUpdate.token) {
-        const token = response.data.data.userUpdate.token
-        const user = response.data.data.userUpdate.user
-       console.log(user)
-        dispatch(setUser(token, user))
-        loginSetUserLocalStorageAndCookie(token, user)
-
-        }
-    
-  })
 }
 }
 // Set user token and info in localStorage and cookie

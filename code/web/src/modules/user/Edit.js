@@ -11,7 +11,7 @@ class Edit extends Component{
       ...props.user.details,
     }
   }
-  handleSubmit = () =>{
+  handleSubmit = (event) =>{
     console.log('runs')
     console.log(this.state)
     this.props.editUser(this.state)
@@ -48,6 +48,7 @@ class Edit extends Component{
   
 }
 function profileState(state) {
+  console.log('we are here shit is real',state)
   return {
     user: state.user
   }
