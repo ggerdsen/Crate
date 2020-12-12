@@ -2,7 +2,18 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Component } from 'react';
 import { editUser } from './api/actions'
+import { Helmet } from 'react-helmet'
+import userRoutes from '../../setup/routes/user'
+import { Link } from 'react-router-dom'
 
+// UI Imports
+import { Input, Textarea, Select } from '../../ui/input'
+import Button from '../../ui/button'
+import Icon from '../../ui/icon'
+import H4 from '../../ui/typography/H4'
+import { Grid, GridCell } from '../../ui/grid'
+
+// Component
 class Edit extends Component{
   constructor(props){
     super()
