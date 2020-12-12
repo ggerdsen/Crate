@@ -8,4 +8,19 @@ describe('state', () => {
     it('should return the initial state', () => {
         expect(state(undefined, {})).toEqual(userInitialState);
     })
+    
+    it('should set the user state', () => {
+        const action = {
+            type: SET_USER,
+            user: 'Chris'
+        }
+        expect(state(undefined, action)).toEqual(
+            {
+                error: null,
+                isLoading: false,
+                isAuthenticated: true,
+                details: 'Chris'
+            }
+        )
+    })
 })
