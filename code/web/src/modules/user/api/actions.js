@@ -72,7 +72,6 @@ export function login(userCredentials, isLoading = true) {
 export function editUser(userDetails){
   return dispatch => {
   window.localStorage.setItem('user', JSON.stringify(userDetails))
-    console.log('action',userDetails)
     dispatch({
       type: EDIT_USER,
       user: userDetails

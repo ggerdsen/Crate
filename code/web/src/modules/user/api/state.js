@@ -48,7 +48,6 @@ export default (state = userInitialState, action) => {
         ...state,
         details: action.user,
       }
-      console.log(obj)
       return obj
     default:
       return state
