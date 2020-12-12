@@ -11,11 +11,15 @@ export const LOGIN_REQUEST = 'AUTH/LOGIN_REQUEST'
 export const LOGIN_RESPONSE = 'AUTH/LOGIN_RESPONSE'
 export const SET_USER = 'AUTH/SET_USER'
 export const LOGOUT = 'AUTH/LOGOUT'
+export const EDIT_USER = 'AUTH/EDIT_USER'
+
+
 
 // Actions
 
 // Set a user after login or using localStorage token
 export function setUser(token, user) {
+  console.log('wtf', token, user)
   if (token) {
     axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   } else {
@@ -32,13 +36,13 @@ export function login(userCredentials, isLoading = true) {
       type: LOGIN_REQUEST,
       isLoading
     })
-
     return axios.post(routeApi, query({
       operation: 'userLogin',
       variables: userCredentials,
-      fields: ['user {name, email, role}', 'token']
+      fields: ['user {name, id, email, picture, shippingAddress, description} token']
     }))
       .then(response => {
+        console.log('this is the response',response)
         let error = ''
 
         if (response.data.errors && response.data.errors.length > 0) {
@@ -65,7 +69,26 @@ export function login(userCredentials, isLoading = true) {
       })
   }
 }
-
+export function editUser(userDetails){
+  return dispatch => {
+  window.localStorage.setItem('user', JSON.stringify(userDetails))
+    dispatch({
+      type: EDIT_USER,
+      user: userDetails
+    })
+    return axios.post(routeApi, mutation({
+      operation: 'userUpdate',
+      variables:{
+      id:userDetails.id, 
+      email:userDetails.email, 
+      picture:userDetails.picture, 
+      shippingAddress:userDetails.shippingAddress, 
+      description:userDetails.description
+    },
+    fields: ['id']
+    }))
+}
+}
 // Set user token and info in localStorage and cookie
 export function loginSetUserLocalStorageAndCookie(token, user) {
   // Update token

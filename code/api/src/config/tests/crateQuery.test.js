@@ -20,7 +20,6 @@ describe('Crate Queries', () => {
       .post('/graphql')
       .send({query: `{crates(orderBy:"desc") { id } }`})
       .expect(200)
-        console.log(response.body.data.crates);
         expect(response.body.data.crates.length).toBe(6)
     done();
   })
@@ -30,7 +29,6 @@ describe('Crate Queries', () => {
       .post('/graphql')
       .send({query: `{crateById(crateId:4) { name } }`})
       .expect(200)
-      console.log(response.body.data);
       expect(response.body.data).toMatchObject(
         {
           crateById: {

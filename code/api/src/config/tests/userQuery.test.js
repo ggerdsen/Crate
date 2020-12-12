@@ -21,7 +21,6 @@ describe('test the truth', () => {
       .post('/graphql')
       .send({query: `{users { email } }`})
       .expect(200)
-        console.log(response.body)
       expect(response.body.data.users.length).toBe(2);
       done();
     })
@@ -33,7 +32,6 @@ describe('test the truth', () => {
     .send({query: '{user(id:1) { email name role } }'})
     // will add description and image above
     .expect(200)
-    console.log(response.body.data);
     expect(response.body).toMatchObject({
 
       data:{

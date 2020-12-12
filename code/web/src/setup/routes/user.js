@@ -3,7 +3,7 @@ import Login from '../../modules/user/Login'
 import Signup from '../../modules/user/Signup'
 import Profile from '../../modules/user/Profile'
 import Subscriptions from '../../modules/user/Subscriptions'
-
+import Edit from '../../modules/user/Edit'
 // User routes
 
 // !! - Can add a route here to a new survey page after subscribing
@@ -28,6 +28,12 @@ export default {
   subscriptions: {
     path: '/user/subscriptions',
     component: Subscriptions,
+    auth: true
+  },
+
+  edit: {
+    path: '/user/edit',
+    component: Edit,
     auth: true
   }
 }

@@ -51,10 +51,10 @@ export const userUpdate = {
       type: GraphQLInt
     },
 
-    name: {
-      name: 'name',
-      type: GraphQLString
-    },
+    // name: {
+    //   name: 'name',
+    //   type: GraphQLString
+    // },
 
     email: {
       name: 'email',

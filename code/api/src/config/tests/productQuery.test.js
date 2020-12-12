@@ -21,7 +21,6 @@ describe('test the truth', () => {
       .post('/graphql')
       .send({query: `{products { name } }`})
       .expect(200)
-        console.log(response.body)
       expect(response.body.data.products.length).toBe(8);
       done();
     })
@@ -32,7 +31,6 @@ describe('test the truth', () => {
     .post('/graphql')
     .send({query: '{productById(productId:1) { slug name description type gender image } }'})
     .expect(200)
-    console.log(response.body.data);
     expect(response.body).toMatchObject({
 
       data:{
