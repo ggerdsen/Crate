@@ -22,6 +22,23 @@ export const subscriptionCreate = {
   resolve: create
 }
 
+// Subscription update
+export const subscriptionUpdate = {
+  type: SubscriptionType,
+  args: {
+    id: {
+      name: 'id',
+      type: GraphQLInt
+    },
+
+    preferredDelivery: {
+      name: 'preferredDelivery',
+      type: GraphQLString
+    }
+  },
+  resolve: update
+}
+
 // Subscription remove
 export const subscriptionRemove = {
   type: SubscriptionType,
