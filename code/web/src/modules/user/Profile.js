@@ -55,11 +55,6 @@ const Profile = (props) => (
           {props.user.details.description ? props.user.details.description : 'Soon-To-Be Trendsetter'}</p>
 
         {/* !! - Link to user crate history*/}
-        <Link to={userRoutes.crates.path}>
-          <Button theme="primary">My Crates</Button>
-        </Link>
-
-        {/* !! - Link to user crate history*/}
         <Link to={userRoutes.closet.path}>
           <Button theme="primary" style={{ marginLeft: '1em' }}>My Closet</Button>
         </Link>

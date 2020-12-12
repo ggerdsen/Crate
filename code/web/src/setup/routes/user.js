@@ -5,7 +5,7 @@ import Profile from '../../modules/user/Profile'
 import Subscriptions from '../../modules/user/Subscriptions'
 import Edit from '../../modules/user/Edit'
 import Closet from '../../modules/user/Closet'
-import Crates from '../../modules/user/Crates'
+
 // User routes
 
 // !! - Can add a route here to a new survey page after subscribing
@@ -42,12 +42,6 @@ export default {
   closet: {
     path: '/user/closet',
     component: Closet,
-    auth: true
-  },
-
-  crates: {
-    path: '/user/crates',
-    component: Crates,
     auth: true
   }
 }
