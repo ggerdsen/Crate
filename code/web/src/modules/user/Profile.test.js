@@ -10,75 +10,43 @@ import {store} from '../../setup/store.js'
 import '@testing-library/jest-dom'
 import { render } from '../../../test-utils.js';
 
+const currentUser = {
+  details: {
+    name: "Elton",
+    email: "elton@john.com"
+  }
+}
+
 describe('User Profile', () => {
   describe('Unit Tests', () => {
     it('Should render a Profile', () => {
-      const currentUser = {
-        details: {
-          name: "Elton",
-          email: "elton@john.com"
-        }
-      }
       render (
         <BrowserRouter>
           <Profile/>
-        </BrowserRouter>, {initialState: { user: {
-          details: {
-            name: "Elton",
-            email: "elton@john.com"
-          }
-        }}}
+        </BrowserRouter>, {initialState: { user: currentUser}}
       )
-      const profileTitle = screen.getByText('My profile')
-      const subscriptionsButton = screen.getByText('Subscriptions')
-      const logoutButton = screen.getByText('Logout')
-      expect(profileTitle).toBeInTheDocument();
-      expect(subscriptionsButton).toBeInTheDocument();
-      expect(logoutButton).toBeInTheDocument();
+      expect(screen.getByText('My profile')).toBeInTheDocument();
+      expect(screen.getByText('Subscriptions')).toBeInTheDocument();
+      expect(screen.getByText('Logout')).toBeInTheDocument();
     })
     it('Should display the user information', () => {
-      const currentUser = {
-        details: {
-          name: "Elton",
-          email: "elton@john.com"
-        }
-      }
       render (
         <BrowserRouter>
           <Profile/>
-        </BrowserRouter>, {initialState: { user: {
-          details: {
-            name: "Elton",
-            email: "elton@john.com"
-          }
-        }}}
+        </BrowserRouter>, {initialState: { user: currentUser}}
       )
-      const userName = screen.getByText('Elton')
-      const userEmail = screen.getByText('elton@john.com')
-      expect(userName).toBeInTheDocument();
-      expect(userEmail).toBeInTheDocument();
+      expect(screen.getByText('Elton')).toBeInTheDocument();
+      expect(screen.getByText('elton@john.com')).toBeInTheDocument();
     })
   })
   describe('Integration Tests', () => {
     it('Should log out a user', () => {
-      const currentUser = {
-        details: {
-          name: "Elton",
-          email: "elton@john.com"
-        }
-      }
       store.dispatch(setUser(1, currentUser))
       render (
         <BrowserRouter>
           <Profile/>
-        </BrowserRouter>, {initialState: { user: {
-          details: {
-            name: "Elton",
-            email: "elton@john.com"
-          }
-        }}}
+        </BrowserRouter>, {initialState: { user: currentUser}}
       )
-      // await waitFor(() => {
       expect(screen.getByText('My profile')).toBeInTheDocument();
       expect(screen.getByText('Subscriptions')).toBeInTheDocument();
       expect(screen.getByText('Logout')).toBeInTheDocument();
