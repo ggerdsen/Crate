@@ -16,6 +16,7 @@ export const LOGOUT = 'AUTH/LOGOUT'
 
 // Set a user after login or using localStorage token
 export function setUser(token, user) {
+  console.log('wtf', token, user)
   if (token) {
     axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   } else {
@@ -32,11 +33,10 @@ export function login(userCredentials, isLoading = true) {
       type: LOGIN_REQUEST,
       isLoading
     })
-
     return axios.post(routeApi, query({
       operation: 'userLogin',
       variables: userCredentials,
-      fields: ['user {name, email, role, picture,shippingAddress,description}', 'token']
+      fields: ['user {name, id,email,picture,shippingAddress,description}']
     }))
       .then(response => {
         let error = ''
@@ -69,19 +69,29 @@ export function editUser(userDetails){
   return dispatch => {
     return axios.post(routeApi, mutation({
       operation: 'userUpdate',
-      variables: userDetails,
-      fields: ['user {name, email, picture, shippingAddress, description}', 'token']
+      variables:{
+      id:userDetails.id, 
+      email:userDetails.email, 
+      picture:userDetails.picture, 
+      shippingAddress:userDetails.shippingAddress, 
+      description:userDetails.description
+    },
+      fields: ['id']
     }))
     .then(response => {
+       console.log('hello',response)
       let error = ''
       if (response.data.errors && response.data.errors.length > 0) {
         error = response.data.errors[0].message
-      } else if (response.data.data.userLogin.token !== '') {
-        const token = response.data.data.userLogin.token
-        const user = response.data.data.userLogin.user
-        console.log(user)
+      } else if (response.data.data.userUpdate.token !== '' || !response.data.data.userUpdate.token) {
+        const token = response.data.data.userUpdate.token
+        const user = response.data.data.userUpdate.user
+       console.log(user)
         dispatch(setUser(token, user))
-    }
+        loginSetUserLocalStorageAndCookie(token, user)
+
+        }
+    
   })
 }
 }
