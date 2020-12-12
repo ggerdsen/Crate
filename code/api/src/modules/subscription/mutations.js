@@ -12,6 +12,11 @@ export const subscriptionCreate = {
     crateId: {
       name: 'crateId',
       type: GraphQLInt
+    },
+
+    preferredDelivery: {
+      name: 'preferredDelivery',
+      type: GraphQLString
     }
   },
   resolve: create
