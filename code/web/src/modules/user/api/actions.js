@@ -19,7 +19,6 @@ export const EDIT_USER = 'AUTH/EDIT_USER'
 
 // Set a user after login or using localStorage token
 export function setUser(token, user) {
-  console.log('wtf', token, user)
   if (token) {
     axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   } else {
@@ -42,7 +41,6 @@ export function login(userCredentials, isLoading = true) {
       fields: ['user {name, id, email, picture, shippingAddress, description} token']
     }))
       .then(response => {
-        console.log('this is the response',response)
         let error = ''
 
         if (response.data.errors && response.data.errors.length > 0) {
@@ -79,10 +77,10 @@ export function editUser(userDetails){
     return axios.post(routeApi, mutation({
       operation: 'userUpdate',
       variables:{
-      id:userDetails.id, 
-      email:userDetails.email, 
-      picture:userDetails.picture, 
-      shippingAddress:userDetails.shippingAddress, 
+      id:userDetails.id,
+      email:userDetails.email,
+      picture:userDetails.picture,
+      shippingAddress:userDetails.shippingAddress,
       description:userDetails.description
     },
     fields: ['id']

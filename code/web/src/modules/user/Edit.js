@@ -5,17 +5,14 @@ import { editUser } from './api/actions'
 
 class Edit extends Component{
   constructor(props){
-    console.log(props)
     super()
     this.state = {
       ...props.user.details,
     }
   }
   handleSubmit = (event) =>{
-    console.log('runs')
-    console.log(this.state)
     this.props.editUser(this.state)
-    
+
   }
   onChange = (event) =>{
     this.setState({[event.target.name]:event.target.value})
@@ -45,10 +42,9 @@ class Edit extends Component{
       </div>
     )
   }
-  
+
 }
 function profileState(state) {
-  console.log('we are here shit is real',state)
   return {
     user: state.user
   }
