@@ -2,7 +2,6 @@ import state from './state';
 import { userInitialState } from './state';
 import { SET_USER, LOGIN_REQUEST, LOGIN_RESPONSE, LOGOUT } from './actions';
 import '@testing-library/jest-dom';
-import Item from '../../product/Item';
 
 describe('state', () => {
     it('should return the initial state', () => {
@@ -52,5 +51,12 @@ describe('state', () => {
                 details: null
             }        
         )
+    })
+
+    it('should log the user out', () => {
+        const action = {
+            type: LOGOUT,
+        }
+        expect(state(undefined, action)).toEqual(userInitialState)
     })
 })
