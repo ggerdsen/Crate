@@ -31,6 +31,22 @@ class Edit extends Component{
   render(){
     return(
       <div>
+        {/* SEO */}
+        <Helmet>
+          <title>My Profile - Crate - Edit</title>
+        </Helmet>
+
+        {/* Page Content */}
+        <div>
+          <Grid alignCenter={true} style={{ padding: '1em' }}>
+            <GridCell style={{ textAlign: 'left' }}>
+              <Link to={userRoutes.profile.path}>
+                <Button><Icon size={1.2}>arrow_back</Icon> Back</Button>
+              </Link>
+            </GridCell>
+          </Grid>
+        </div>
+
         <form>
           <label>
             Description:
