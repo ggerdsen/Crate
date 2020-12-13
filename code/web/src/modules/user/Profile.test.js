@@ -47,7 +47,7 @@ describe('User Profile', () => {
   describe('Integration Tests', () => {
 
     it('Should log out a user', () => {
-      store.dispatch(setUser(1, currentUser))
+      // store.dispatch(setUser(1, currentUser))
       render (
         <BrowserRouter>
           <Profile/>
@@ -58,7 +58,7 @@ describe('User Profile', () => {
       expect(screen.getByText('Logout')).toBeInTheDocument();
       setTimeout(() => {
         userEvent.click(screen.getByText('Logout'));
-      }, 1000);
+      }, 1);
       expect(screen.getByText('Elton')).toBeInTheDocument();
     })
 

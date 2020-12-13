@@ -24,7 +24,6 @@ class Edit extends Component{
   }
   handleSubmit = (event) =>{
     this.props.editUser(this.state)
-
   }
   onChange = (event) =>{
     this.setState({[event.target.name]:event.target.value})
@@ -67,7 +66,7 @@ class Edit extends Component{
                 required="required"
                 name="name"
                 autoComplete="off"
-                value={this.state.name}
+                value={this.state.name || ''}
                 onChange={this.onChange}
               />
 
@@ -79,7 +78,7 @@ class Edit extends Component{
                 required="required"
                 name="shippingAddress"
                 autoComplete="off"
-                value={this.state.shippingAddress}
+                value={this.state.shippingAddress || ''}
                 onChange={this.onChange}
               />
               {/* Email Address */}
@@ -90,7 +89,7 @@ class Edit extends Component{
                 required="required"
                 name="email"
                 autoComplete="off"
-                value={this.state.email}
+                value={this.state.email || ''}
                 onChange={this.onChange}
               />
 
@@ -100,7 +99,7 @@ class Edit extends Component{
                 placeholder="Description"
                 required="required"
                 name="description"
-                value={this.state.description}
+                value={this.state.description || ''}
                 onChange={this.onChange}
                 style={{ marginTop: '1em' }}
               />
@@ -113,7 +112,7 @@ class Edit extends Component{
                 required="required"
                 name="picture"
                 autoComplete="off"
-                value={this.state.picture}
+                value={this.state.picture || ''}
                 onChange={this.onChange}
               />
 
