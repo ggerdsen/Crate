@@ -1,3 +1,34 @@
+## Contributors
+<br>
+In no particular order...
+<br><br>
+
+Corey Carter
+[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-corey]
+[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-corey]
+<br />
+<br>
+Garrett Gerdsen
+[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-gar]
+[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-gar]
+<br />
+<br>
+
+[git-corey]: https://github.com/coreycartercodes
+[linkedin-corey]: https://www.linkedin.com/in/carter-codes/
+
+[git-gar]: https://github.com/ggerdsen
+[linkedin-gar]: https://www.linkedin.com/in/ggerdsen/
+
+
+[git-jud]: https://github.com/judithpillado
+[linkedin-jud]: https://www.linkedin.com/in/judith-pillado/
+ 
+[git-tyler]: https://github.com/fieldstyler
+[linkedin-tyler]: https://www.linkedin.com/in/tyler-fields-583084197/
+
+
+
 ![Crate](https://raw.githubusercontent.com/atulmy/atulmy.github.io/master/images/crate/hero-with-link.png)
 
 # Crate 👕👖📦
