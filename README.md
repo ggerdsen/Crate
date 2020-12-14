@@ -30,6 +30,7 @@ Crate is designed to provide a service that allows users to setup recurring mont
 ### Setup
 - Clone down the repo
 - Navigate to `../code/api`
+- Run `npx sequelize db:create`, this creates your database locally
 - Run `npm run setup` to install packages and database setup (migrations and seed)
 - Run `npm start`
 - You can browse GraphiQL at http://localhost:8000/
