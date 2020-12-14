@@ -3,11 +3,11 @@
 
 This is a brownfield project built upon by a student full-stack team. Our team was assigned the _[Improving UX and Community Track](https://mod4.turing.io/projects/crate/crate_project_tracks.html)_  
 
-### What it Does
+### What it does
 
 Crate is designed to provide a service that allows users to setup recurring monthly shipments of clothing and accessories for purchase.
 
-### Technologies Used
+### Technologies used
 
 **Front End**
 - React
@@ -38,10 +38,8 @@ Crate is designed to provide a service that allows users to setup recurring mont
 - Run `npm start`
 - Visit the application in your browser at http://localhost:3000/
 
-### Contributors
+### Contributors in no particular order...
 <br>
-In no particular order...
-<br><br>
 
 Christopher Castanuela (Front End)
 [<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-chris]
