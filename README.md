@@ -3,6 +3,10 @@
 
 This is a brownfield project used by a student full-stack team to build upon. This team was assigned the _[Improving UX and Community Track](https://mod4.turing.io/projects/crate/crate_project_tracks.html)_  
 
+### What it Does
+
+Crate is designed to provide a service that allows users to setup recurring monthly shipments of clothing and accessories for purchase.
+
 ## Contributors
 <br>
 In no particular order...
