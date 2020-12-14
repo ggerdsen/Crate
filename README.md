@@ -1,7 +1,7 @@
 
 ## Mod 4 Crate Project
 
-This is a brownfield project built upon by a student full-stack team. Our team was assigned the _[Improving UX and Community Track](https://mod4.turing.io/projects/crate/crate_project_tracks.html)_  
+This is a brownfield project built upon by a student full-stack team. Information on the original Crate project can be found below.  Our team was assigned the _[Improving UX and Community Track](https://mod4.turing.io/projects/crate/crate_project_tracks.html)_  
 
 ### What it does
 
