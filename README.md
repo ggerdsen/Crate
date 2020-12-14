@@ -5,7 +5,7 @@ This is a brownfield project built upon by a student full-stack team. Our team w
 
 ### What it does
 
-Crate is designed to provide a service that allows users to setup recurring monthly shipments of clothing and accessories for purchase.
+Crate is a service that allows users to setup recurring monthly shipments of clothing and accessories for purchase.
 
 ### Technologies used
 
