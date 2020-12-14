@@ -43,6 +43,7 @@ Crate is designed to provide a service that allows users to setup recurring mont
 Christopher Castanuela (Front End)
 [<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-chris]
 [<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-chris]
+<br>
 <br />
 <br>
 Kristi Miller (Front End)
