@@ -1,4 +1,11 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+
 # Mod 4 Crate Project
+
+This is a brownfield project used by a student full-stack team to build upon. This team was assigned the _[Improving UX and Community Track](https://mod4.turing.io/projects/crate/crate_project_tracks.html)_
 ## Contributors
 <br>
 In no particular order...
