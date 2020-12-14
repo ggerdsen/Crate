@@ -14,6 +14,26 @@ Garrett Gerdsen
 [<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-gar]
 <br />
 <br>
+Kristi Miller
+[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-kristi]
+[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-kristi]
+<br />
+<br>
+Christopher Castanuela
+[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-chris]
+[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-chris]
+<br />
+<br>
+Norma Lopez
+[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-norma]
+[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-norma]
+<br />
+<br>
+Taylor Johnson
+[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-taylor]
+[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-taylor]
+<br />
+<br>
 
 [git-corey]: https://github.com/coreycartercodes
 [linkedin-corey]: https://www.linkedin.com/in/carter-codes/
@@ -22,12 +42,17 @@ Garrett Gerdsen
 [linkedin-gar]: https://www.linkedin.com/in/ggerdsen/
 
 
-[git-jud]: https://github.com/judithpillado
-[linkedin-jud]: https://www.linkedin.com/in/judith-pillado/
+[git-kristi]: https://github.com/Kristiannmiller
+[linkedin-kristi]: https://www.linkedin.com/in/
  
-[git-tyler]: https://github.com/fieldstyler
-[linkedin-tyler]: https://www.linkedin.com/in/tyler-fields-583084197/
+[git-taylor]: https://github.com/taylorjohnson141
+[linkedin-taylor]: https://www.linkedin.com/in/
 
+[git-chris]: https://github.com/Chriscastanuela
+[linkedin-chris]: https://www.linkedin.com/in/
+
+[git-norma]: https://github.com/IamNorma
+[linkedin-norma]: https://www.linkedin.com/in/
 
 
 ![Crate](https://raw.githubusercontent.com/atulmy/atulmy.github.io/master/images/crate/hero-with-link.png)
