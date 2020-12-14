@@ -33,7 +33,7 @@ Crate is designed to provide a service that allows users to setup recurring mont
 - Run `npm run setup` to install packages and database setup (migrations and seed)
 - Run `npm start`
 - You can browse GraphiQL at http://localhost:8000/
-- Navigate to `../code/web`
+- Navigate back to `../code/web`
 - Run `npm install` to install packages
 - Run `npm start`
 - Visit the application in your browser at http://localhost:3000/
