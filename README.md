@@ -39,7 +39,7 @@ Crate is designed to provide a service that allows users to setup recurring mont
 - Visit the application in your browser at http://localhost:3000/
 
 ### Contributors (in no particular order)
-<br><br>
+<br>
 Christopher Castanuela (Front End)
 [<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-chris]
 [<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-chris]
