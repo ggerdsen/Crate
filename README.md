@@ -73,7 +73,7 @@ Garrett Gerdsen (Back End)
 <br>
  
 [git-kristi]: https://github.com/Kristiannmiller
-[linkedin-kristi]: https://www.linkedin.com/in/
+[linkedin-kristi]: https://www.linkedin.com/in/kristiannmiller/
 
 [git-taylor]: https://github.com/taylorjohnson141
 [linkedin-taylor]: https://www.linkedin.com/in/
