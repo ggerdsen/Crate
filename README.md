@@ -19,6 +19,14 @@ Crate is designed to provide a service that allows users to setup recurring mont
 - GraphQL
 - Sequelize
 
+### Features our team added
+
+- Add ability for a user to upload a profile picture
+- User can now set a personal description within their profile
+- Personal details (email, shipping address) can now be edited
+- Now possible for a user to see order history and next delivery date
+- Implement testing framework and tests
+
 ### Setup
 - Clone down the repo
 - Navigate to `../code/api`
