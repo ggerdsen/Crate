@@ -4,47 +4,40 @@
 In no particular order...
 <br><br>
 
-Corey Carter
-[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-corey]
-[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-corey]
-<br />
-<br>
-Garrett Gerdsen
-[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-gar]
-[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-gar]
-<br />
-<br>
-Kristi Miller
-[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-kristi]
-[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-kristi]
-<br />
-<br>
-Christopher Castanuela
+Christopher Castanuela (Front End)
 [<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-chris]
 [<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-chris]
 <br />
 <br>
-Norma Lopez
-[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-norma]
-[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-norma]
+Kristi Miller (Front End)
+[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-kristi]
+[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-kristi]
 <br />
 <br>
-Taylor Johnson
+Taylor Johnson (Front End)
 [<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-taylor]
 [<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-taylor]
 <br />
 <br>
-
-[git-corey]: https://github.com/coreycartercodes
-[linkedin-corey]: https://www.linkedin.com/in/carter-codes/
-
-[git-gar]: https://github.com/ggerdsen
-[linkedin-gar]: https://www.linkedin.com/in/ggerdsen/
-
-
+Norma Lopez (Back End)
+[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-norma]
+[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-norma]
+<br />
+<br>
+Corey Carter (Back End)
+[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-corey]
+[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-corey]
+<br />
+<br>
+Garrett Gerdsen (Back End)
+[<img align="left" alt="corey github" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][git-gar]
+[<img align="left" alt="corey linkedin' | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin-gar]
+<br />
+<br>
+ 
 [git-kristi]: https://github.com/Kristiannmiller
 [linkedin-kristi]: https://www.linkedin.com/in/
- 
+
 [git-taylor]: https://github.com/taylorjohnson141
 [linkedin-taylor]: https://www.linkedin.com/in/
 
@@ -53,6 +46,14 @@ Taylor Johnson
 
 [git-norma]: https://github.com/IamNorma
 [linkedin-norma]: https://www.linkedin.com/in/
+
+[git-corey]: https://github.com/coreycartercodes
+[linkedin-corey]: https://www.linkedin.com/in/carter-codes/
+
+[git-gar]: https://github.com/ggerdsen
+[linkedin-gar]: https://www.linkedin.com/in/ggerdsen/
+
+
 
 
 ![Crate](https://raw.githubusercontent.com/atulmy/atulmy.github.io/master/images/crate/hero-with-link.png)
